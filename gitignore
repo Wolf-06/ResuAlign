@@ -1,0 +1,27 @@
+# Virtual Environment (Exclude all common names)
+venv/
+.venv/
+env/
+.env/
+
+# Python compiled files (Junk files created when running code)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment Variables (Secrets - VERY IMPORTANT)
+.env
+.env.local
+
+# IDE settings (Optional, but recommended)
+.vscode/
+.idea/
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+
+# Databases (If using SQLite)
+*.sqlite3
+*.db
