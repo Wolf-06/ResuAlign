@@ -1,0 +1,27 @@
+services:
+
+  db:
+    image: postgres:15-alpine
+    container_name: resu_db
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+      POSTGRES_DB: ${DB_NAME:-resualign}
+    ports:
+      - "5432:5432"
+    networks: 
+      - resu-net
+  
+
+
+
+volumes:
+  postgres_data:
+
+networks:
+  resu-net:
+    driver: bridge
+
