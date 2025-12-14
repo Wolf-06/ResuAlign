@@ -3,7 +3,6 @@ venv/
 .venv/
 env/
 .env/
-.env
 
 # Python compiled files (Junk files created when running code)
 __pycache__/
