@@ -17,10 +17,12 @@ __pycache__/
 .vscode/
 .idea/
 
+
 # Distribution / Packaging
 dist/
 build/
 *.egg-info/
+
 
 # Databases (If using SQLite)
 *.sqlite3

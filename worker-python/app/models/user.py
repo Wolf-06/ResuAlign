@@ -44,3 +44,4 @@ class UserResponse(UserBase):
     profile : Optional[ProfileResponse] = None
 
     model_config = ConfigDict(from_attributes=True)
+
